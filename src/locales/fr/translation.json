@@ -1,0 +1,134 @@
+{
+  "hero": {
+    "title": "Raccourcissez les URLs, Développez les Insights",
+    "subtitle": "Transformez vos liens en outils marketing puissants avec des analyses en temps réel et un suivi de géolocalisation"
+  },
+  "form": {
+    "title": "Créez Votre URL Court",
+    "description": {
+      "authenticated": "Liens illimités avec analyses détaillées",
+      "guest": "Jusqu'à 5 liens gratuits pour les invités"
+    },
+    "inputPlaceholder": "Entrez votre URL longue ici...",
+    "inputLabel": "Entrez votre URL longue à raccourcir",
+    "button": {
+      "loading": "Raccourcissement...",
+      "default": "Raccourcir l'URL"
+    },
+    "success": {
+      "title": "Succès ! Votre URL court est prêt",
+      "scanQr": "Scannez pour ouvrir le lien",
+      "clickToOpen": "Cliquez pour ouvrir le lien raccourci",
+      "copy": "Copier",
+      "copied": "Copié"
+    }
+  },
+  "benefits": {
+    "title": "Avantages pour Votre Entreprise",
+    "subtitle": "Augmentez la conversion et optimisez vos campagnes marketing",
+    "ctr": {
+      "title": "Augmentez le CTR de 30%",
+      "description": "Les liens courts ont l'air professionnels et inspirent confiance aux utilisateurs, conduisant à des taux de clics plus élevés"
+    },
+    "metrics": {
+      "title": "Métriques Essentielles de Performance",
+      "description": "Obtenez des insights clairs sur les clics, les transitions et le CTR sans bruit."
+    },
+    "instant": {
+      "title": "Création Instantanée",
+      "description": "Créez des liens courts en quelques secondes sans inscription. Inscrivez-vous gratuitement pour accéder aux fonctionnalités avancées"
+    }
+  },
+  "errors": {
+    "limitReached": "Vous avez atteint la limite de 5 liens pour les utilisateurs invités. Inscrivez-vous pour créer des liens illimités !",
+    "serverError": "Le serveur a renvoyé une réponse invalide",
+    "shortenError": "Erreur lors du raccourcissement de l'URL",
+    "connectionError": "Erreur de connexion au serveur",
+    "copyFailed": "Échec de la copie du lien, veuillez copier manuellement",
+    "copiedSuccess": "Copié dans le presse-papiers"
+  },
+  "success": {
+    "urlShortened": "URL raccourci avec succès !"
+  },
+  "dashboard": {
+    "subtitle": "Gérez vos liens et suivez les statistiques",
+    "domainSettings": "Paramètres du Domaine",
+    "stats": {
+      "totalLinks": "Total des Liens",
+      "unlimited": "Illimité",
+      "totalClicks": "Total des Clics",
+      "allTime": "Tout le temps",
+      "averageCTR": "CTR Moyen",
+      "clicksPerLink": "Clics par lien"
+    },
+    "links": {
+      "title": "Mes Liens",
+      "createLink": "Créer un Lien",
+      "createNew": "Créer un Nouveau Lien Court",
+      "urlToShorten": "URL à Raccourcir",
+      "customCode": "Code de Lien Personnalisé (optionnel)",
+      "customCodeHint": "Laissez vide pour génération automatique",
+      "creating": "Création...",
+      "create": "Créer",
+      "cancel": "Annuler",
+      "loading": "Chargement...",
+      "empty": "Vous n'avez pas encore de liens courts",
+      "createFirst": "Créer le Premier Lien",
+      "table": {
+        "shortLink": "Lien Court",
+        "originalUrl": "URL Originale",
+        "clicks": "Clics",
+        "created": "Créé",
+        "actions": "Actions"
+      },
+      "qr": "QR",
+      "stats": "Statistiques"
+    }
+  },
+  "stats": {
+    "title": "Statistiques du Lien",
+    "backToList": "Retour à la Liste",
+    "back": "Retour",
+    "loading": "Chargement des statistiques...",
+    "notFound": "Statistiques introuvables",
+    "created": "Créé",
+    "short": "Court",
+    "original": "Original",
+    "totalClicks": "Total des Clics",
+    "countries": "Pays",
+    "uniqueClicks": "Clics Uniques",
+    "devices": "Appareils",
+    "topCountries": "Top 5 Pays",
+    "recentClicks": "Clics Récents",
+    "detailedStatistics": "Statistiques Détaillées",
+    "table": {
+      "dateTime": "Date et Heure",
+      "country": "Pays",
+      "device": "Appareil",
+      "os": "OS"
+    },
+    "noData": "Aucune donnée",
+    "noClicks": "Aucun clic",
+    "noClicksYet": "Aucun clic sur ce lien pour le moment",
+    "clicks": "clics"
+  },
+  "profile": {
+    "title": "Paramètres du Profil",
+    "edit": "Modifier",
+    "hide": "Masquer",
+    "name": "Nom",
+    "namePlaceholder": "Votre nom",
+    "email": "E-mail",
+    "emailPlaceholder": "votre@email.com",
+    "currentPassword": "Mot de Passe Actuel (requis pour changer le mot de passe)",
+    "currentPasswordPlaceholder": "Entrez le mot de passe actuel",
+    "newPassword": "Nouveau Mot de Passe (laissez vide si vous ne changez pas)",
+    "newPasswordPlaceholder": "Nouveau mot de passe",
+    "confirmPassword": "Confirmer le Nouveau Mot de Passe",
+    "confirmPasswordPlaceholder": "Confirmez le nouveau mot de passe",
+    "saving": "Enregistrement...",
+    "saveChanges": "Enregistrer les Modifications",
+    "cancel": "Annuler"
+  }
+}
+

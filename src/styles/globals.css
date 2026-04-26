@@ -1,0 +1,325 @@
+@import "tailwindcss";
+
+/* ─── CutToTech Design System ─── */
+
+:root {
+  --accent: #4F46E5;
+  --accent-hover: #4338CA;
+  --bg-landing: #FEFCF9;
+  --bg-app: #FAFBFD;
+  --card: #FFFFFF;
+  --card-border: rgba(0,0,0,0.06);
+  --surface: #F8FAFC;
+  --input-bg: #FFFFFF;
+  --text-1: #0F172A;
+  --text-2: #64748B;
+  --text-3: #94A3B8;
+  --border: #E2E8F0;
+  --success: #16A34A;
+  --warning: #D97706;
+  --danger: #DC2626;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.04);
+  --shadow-md: 0 8px 24px rgba(0,0,0,0.06);
+  --mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+  --radius: 16px;
+  --radius-sm: 10px;
+  --radius-xs: 8px;
+  --pill-bg: #F1F5F9;
+  --pill-fg: #334155;
+  --toggle-off: #CBD5E1;
+  --header-bg: rgba(255,255,255,0.85);
+  --hover-overlay: rgba(0,0,0,0.04);
+
+  /* shadcn/tailwind token compat */
+  --background-color: var(--bg-app);
+  --foreground: var(--text-1);
+  --primary: var(--accent);
+  --primary-foreground: #ffffff;
+  --secondary: var(--surface);
+  --secondary-foreground: var(--text-1);
+  --muted: var(--surface);
+  --muted-foreground: var(--text-2);
+  --accent-foreground: var(--text-1);
+  --destructive: var(--danger);
+  --destructive-foreground: #ffffff;
+  --input: var(--border);
+  --ring: rgba(79, 70, 229, 0.35);
+  --popover: var(--card);
+  --popover-foreground: var(--text-1);
+  --card-foreground: var(--text-1);
+}
+
+/* ─── Dark Mode ─── */
+.dark {
+  --bg-landing: #0B0F1A;
+  --bg-app: #0B0F1A;
+  --card: #141925;
+  --card-border: rgba(255,255,255,0.08);
+  --surface: #1E293B;
+  --input-bg: #1E293B;
+  --pill-bg: #1E293B;
+  --pill-fg: #E2E8F0;
+  --toggle-off: #334155;
+  --header-bg: rgba(11,15,26,0.85);
+  --hover-overlay: rgba(255,255,255,0.05);
+  --text-1: #E2E8F0;
+  --text-2: #94A3B8;
+  --text-3: #64748B;
+  --border: rgba(255,255,255,0.1);
+  --shadow-sm: none;
+  --shadow-md: none;
+  --background: #0B0F1A;
+  --foreground: #E2E8F0;
+  --primary: #4F46E5;
+  --primary-foreground: #ffffff;
+  --secondary: #1E293B;
+  --secondary-foreground: #E2E8F0;
+  --muted: #1E293B;
+  --muted-foreground: #94A3B8;
+  --destructive: #DC2626;
+  --input: rgba(255,255,255,0.1);
+  --ring: rgba(79, 70, 229, 0.4);
+  --popover: #141925;
+  --popover-foreground: #E2E8F0;
+  --card-foreground: #E2E8F0;
+}
+
+@theme inline {
+  --color-background-color: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--surface);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: 8px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+}
+
+/* ─── Base ─── */
+* { box-sizing: border-box; }
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  font-feature-settings: 'cv11', 'ss01';
+  color: var(--text-1);
+  background-color: var(--bg-app);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 200ms ease-out, color 200ms ease-out;
+}
+
+/* Theme switch is instant — no global transition.
+   Animating background-color on every element causes the main thread to block on big pages.
+   This matches the behavior of Linear, Vercel, GitHub, etc. */
+
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+}
+
+/* ─── Focus ─── */
+*:focus-visible {
+  outline: 3px solid var(--ring);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+/* ─── Scrollbar ─── */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.12); border-radius: 4px; }
+.dark ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.12); }
+
+/* ─── Custom Classes ─── */
+.mono { font-family: var(--mono); font-weight: 500; }
+
+/* Buttons */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  font-weight: 500; font-size: 14px; border-radius: var(--radius-sm);
+  transition: box-shadow 200ms ease-out, transform 100ms ease-out, opacity 150ms ease-out;
+  white-space: nowrap; cursor: pointer; border: none;
+}
+.btn-primary { background-color: var(--accent); color: #fff; height: 44px; padding: 0 20px; }
+.btn-primary:hover { background-color: var(--accent-hover); }
+.btn-primary.sm { height: 36px; padding: 0 14px; font-size: 13px; }
+.btn-secondary { background-color: var(--card); border: 1px solid var(--border); color: var(--text-1); height: 36px; padding: 0 14px; font-size: 13px; }
+.btn-secondary:hover { background-color: var(--surface); }
+.btn-ghost { color: var(--text-2); height: 36px; padding: 0 12px; font-size: 13px; border-radius: var(--radius-xs); background: none; border: none; }
+.btn-ghost:hover { background-color: var(--hover-overlay); color: var(--text-1); }
+.btn-danger { background-color: var(--danger); color: #fff; height: 36px; padding: 0 14px; font-size: 13px; border: none; }
+.btn-danger:hover { background: #B91C1C; }
+.btn-icon {
+  width: 28px; height: 28px; border-radius: 6px; color: var(--text-3);
+  display: inline-flex; align-items: center; justify-content: center;
+  transition: background-color 150ms ease-out, color 150ms ease-out;
+  background: none; border: none; cursor: pointer;
+}
+.btn-icon:hover { color: var(--accent); background-color: var(--hover-overlay); }
+
+/* Input */
+.ctt-input {
+  width: 100%; height: 44px; padding: 0 14px; border-radius: 12px;
+  border: 1px solid var(--border); background-color: var(--input-bg); font-size: 15px; color: var(--text-1);
+  transition: border-color 150ms ease-out, box-shadow 150ms ease-out;
+  font-family: inherit;
+}
+.ctt-input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(79,70,229,0.12); }
+.ctt-input::placeholder { color: var(--text-3); }
+
+/* Card */
+.ctt-card {
+  background-color: var(--card); border: 1px solid var(--card-border); border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 200ms ease-out, transform 200ms ease-out;
+}
+.ctt-card.hoverable:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+
+/* Pill badge */
+.pill {
+  display: inline-flex; align-items: center; gap: 6px;
+  background-color: var(--pill-bg); color: var(--pill-fg); font-size: 13px; font-weight: 500;
+  height: 28px; padding: 0 14px; border-radius: 14px;
+}
+
+/* Header */
+.ctt-header {
+  height: 64px; background-color: var(--header-bg); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--card-border);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 32px; position: sticky; top: 0; z-index: 50;
+}
+
+.ctt-logo { display: flex; align-items: center; gap: 10px; font-weight: 600; font-size: 18px; color: var(--text-1); }
+.ctt-logomark {
+  width: 32px; height: 32px; border-radius: 8px; background-color: var(--accent);
+  display: inline-flex; align-items: center; justify-content: center; color: #fff;
+}
+
+/* Footer */
+.ctt-footer {
+  background-color: var(--surface); border-top: 1px solid var(--border);
+  padding: 48px 32px 32px;
+}
+
+/* Stat card */
+.stat-card {
+  background-color: var(--card); border: 1px solid var(--card-border); border-radius: var(--radius);
+  padding: 20px 24px; display: flex; align-items: center; justify-content: space-between;
+  box-shadow: var(--shadow-sm); min-height: 88px;
+  transition: transform 200ms ease-out, box-shadow 200ms ease-out;
+}
+.stat-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
+.stat-num { font-size: 28px; font-weight: 700; line-height: 1.1; color: var(--text-1); }
+.stat-label { font-size: 13px; color: var(--text-2); margin-top: 4px; }
+.stat-icon-bubble {
+  width: 40px; height: 40px; border-radius: 12px;
+  display: inline-flex; align-items: center; justify-content: center;
+}
+
+/* Link row */
+.link-row {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px; border: 1px solid var(--card-border); border-radius: 12px;
+  background-color: var(--card); transition: transform 150ms ease-out;
+}
+.link-row:hover { background-color: var(--surface); transform: translateX(2px); }
+
+/* Tabs */
+.ctt-tabs { display: flex; gap: 8px; border-bottom: 1px solid var(--border); }
+.ctt-tab {
+  padding: 12px 16px; font-size: 14px; font-weight: 500; color: var(--text-2);
+  border-bottom: 2px solid transparent; margin-bottom: -1px;
+  transition: color 150ms ease-out, border-color 150ms ease-out;
+  background: none; border-top: none; border-left: none; border-right: none; cursor: pointer;
+}
+.ctt-tab:hover { color: var(--text-1); }
+.ctt-tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+
+/* Toggle */
+.toggle {
+  width: 36px; height: 20px; border-radius: 10px; background-color: var(--toggle-off);
+  position: relative; cursor: pointer; transition: background-color 150ms ease-out;
+  flex-shrink: 0; border: none;
+}
+.toggle.on { background-color: var(--accent); }
+.toggle::after {
+  content: ''; position: absolute; top: 2px; left: 2px;
+  width: 16px; height: 16px; border-radius: 50%; background: #fff;
+  transition: transform 150ms;
+}
+.toggle.on::after { transform: translateX(16px); }
+
+/* Toast */
+.ctt-toast {
+  position: fixed; top: 24px; right: 24px; z-index: 100;
+  display: flex; align-items: center; gap: 12px;
+  background-color: var(--card); border: 1px solid var(--card-border); border-radius: 12px;
+  padding: 14px 18px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  border-left: 3px solid var(--success);
+  animation: slideDown 250ms ease-out;
+  font-size: 14px;
+}
+.ctt-toast.error { border-left-color: var(--danger); }
+
+/* ─── Animations ─── */
+@keyframes slideDown { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes slideUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes scaleIn { from { opacity: 0; transform: scale(0.96); } to { opacity: 1; transform: scale(1); } }
+@keyframes countBounce {
+  0% { transform: translateY(8px); opacity: 0; }
+  60% { transform: translateY(-2px); opacity: 1; }
+  100% { transform: translateY(0); }
+}
+@keyframes shimmer { 0% { background-position: -400px 0; } 100% { background-position: 400px 0; } }
+@keyframes ping {
+  0% { transform: scale(1); opacity: 0.7; }
+  80%, 100% { transform: scale(2.4); opacity: 0; }
+}
+@keyframes drawLine {
+  from { stroke-dashoffset: var(--dash-len, 1000); }
+  to { stroke-dashoffset: 0; }
+}
+
+.anim-slide-down { animation: slideDown 250ms ease-out; }
+.anim-slide-up { animation: slideUp 450ms cubic-bezier(.2,.7,.3,1) both; }
+.anim-fade-in { animation: fadeIn 200ms ease-out; }
+.anim-scale-in { animation: scaleIn 200ms ease-out; }
+.anim-count { animation: countBounce 500ms cubic-bezier(.2,.9,.3,1.1) both; }
+
+/* Skeleton shimmer */
+.skeleton {
+  background: linear-gradient(90deg, #EEF2F7 0%, #F8FAFC 50%, #EEF2F7 100%);
+  background-size: 800px 100%;
+  animation: shimmer 1.4s linear infinite;
+  border-radius: 8px;
+}
+.dark .skeleton {
+  background: linear-gradient(90deg, #1E293B 0%, #334155 50%, #1E293B 100%);
+  background-size: 800px 100%;
+}
+
+/* Live ticker animation */
+.live-ticker-item { animation: slideDown 400ms ease-out both; }

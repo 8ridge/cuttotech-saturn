@@ -1,0 +1,134 @@
+{
+  "hero": {
+    "title": "Acorta URLs, Amplía Insights",
+    "subtitle": "Transforma tus enlaces en poderosas herramientas de marketing con análisis en tiempo real y seguimiento de geolocalización"
+  },
+  "form": {
+    "title": "Crea Tu URL Corto",
+    "description": {
+      "authenticated": "Enlaces ilimitados con análisis detallados",
+      "guest": "Hasta 5 enlaces gratuitos para invitados"
+    },
+    "inputPlaceholder": "Ingresa tu URL larga aquí...",
+    "inputLabel": "Ingresa tu URL larga para acortar",
+    "button": {
+      "loading": "Acortando...",
+      "default": "Acortar URL"
+    },
+    "success": {
+      "title": "¡Éxito! Tu URL corto está listo",
+      "scanQr": "Escanear para abrir el enlace",
+      "clickToOpen": "Haz clic para abrir el enlace acortado",
+      "copy": "Copiar",
+      "copied": "Copiado"
+    }
+  },
+  "benefits": {
+    "title": "Beneficios para Tu Negocio",
+    "subtitle": "Aumenta la conversión y optimiza tus campañas de marketing",
+    "ctr": {
+      "title": "Aumenta el CTR en un 30%",
+      "description": "Los enlaces cortos se ven profesionales y generan confianza con los usuarios, lo que lleva a mayores tasas de clics"
+    },
+    "metrics": {
+      "title": "Métricas Esenciales de Rendimiento",
+      "description": "Obtén información clara sobre clics, transiciones y CTR sin ruido."
+    },
+    "instant": {
+      "title": "Creación Instantánea",
+      "description": "Crea enlaces cortos en segundos sin registro. Regístrate gratis para acceder a funciones avanzadas"
+    }
+  },
+  "errors": {
+    "limitReached": "Has alcanzado el límite de 5 enlaces para usuarios invitados. ¡Regístrate para crear enlaces ilimitados!",
+    "serverError": "El servidor devolvió una respuesta inválida",
+    "shortenError": "Error al acortar URL",
+    "connectionError": "Error de conexión del servidor",
+    "copyFailed": "Error al copiar el enlace, copia manualmente",
+    "copiedSuccess": "Copiado al portapapeles"
+  },
+  "success": {
+    "urlShortened": "¡URL acortado con éxito!"
+  },
+  "dashboard": {
+    "subtitle": "Gestiona tus enlaces y rastrea estadísticas",
+    "domainSettings": "Configuración de Dominio",
+    "stats": {
+      "totalLinks": "Total de Enlaces",
+      "unlimited": "Ilimitado",
+      "totalClicks": "Total de Clics",
+      "allTime": "Todo el tiempo",
+      "averageCTR": "CTR Promedio",
+      "clicksPerLink": "Clics por enlace"
+    },
+    "links": {
+      "title": "Mis Enlaces",
+      "createLink": "Crear Enlace",
+      "createNew": "Crear Nuevo Enlace Corto",
+      "urlToShorten": "URL para Acortar",
+      "customCode": "Código de Enlace Personalizado (opcional)",
+      "customCodeHint": "Deje vacío para generación automática",
+      "creating": "Creando...",
+      "create": "Crear",
+      "cancel": "Cancelar",
+      "loading": "Cargando...",
+      "empty": "Aún no tienes enlaces cortos",
+      "createFirst": "Crear Primer Enlace",
+      "table": {
+        "shortLink": "Enlace Corto",
+        "originalUrl": "URL Original",
+        "clicks": "Clics",
+        "created": "Creado",
+        "actions": "Acciones"
+      },
+      "qr": "QR",
+      "stats": "Estadísticas"
+    }
+  },
+  "stats": {
+    "title": "Estadísticas del Enlace",
+    "backToList": "Volver a la Lista",
+    "back": "Volver",
+    "loading": "Cargando estadísticas...",
+    "notFound": "Estadísticas no encontradas",
+    "created": "Creado",
+    "short": "Corto",
+    "original": "Original",
+    "totalClicks": "Total de Clics",
+    "countries": "Países",
+    "uniqueClicks": "Clics Únicos",
+    "devices": "Dispositivos",
+    "topCountries": "Top 5 Países",
+    "recentClicks": "Clics Recientes",
+    "detailedStatistics": "Estadísticas Detalladas",
+    "table": {
+      "dateTime": "Fecha y Hora",
+      "country": "País",
+      "device": "Dispositivo",
+      "os": "SO"
+    },
+    "noData": "Sin datos",
+    "noClicks": "Sin clics",
+    "noClicksYet": "Aún no hay clics en este enlace",
+    "clicks": "clics"
+  },
+  "profile": {
+    "title": "Configuración del Perfil",
+    "edit": "Editar",
+    "hide": "Ocultar",
+    "name": "Nombre",
+    "namePlaceholder": "Tu nombre",
+    "email": "Correo Electrónico",
+    "emailPlaceholder": "tu@email.com",
+    "currentPassword": "Contraseña Actual (requerida para cambiar contraseña)",
+    "currentPasswordPlaceholder": "Ingresa la contraseña actual",
+    "newPassword": "Nueva Contraseña (deja vacío si no estás cambiando)",
+    "newPasswordPlaceholder": "Nueva contraseña",
+    "confirmPassword": "Confirmar Nueva Contraseña",
+    "confirmPasswordPlaceholder": "Confirma la nueva contraseña",
+    "saving": "Guardando...",
+    "saveChanges": "Guardar Cambios",
+    "cancel": "Cancelar"
+  }
+}
+

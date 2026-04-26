@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+    <script src="/gtm-loader.js" async></script>
+    <!-- End Google Tag Manager -->
+    <!-- Google tag (gtag.js) - Conversion ID: AW-17745783756 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17745783756">
+    </script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-17745783756');
+    </script>
+    <!-- Event snippet for Registration conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-17745783756/jHaRCKiB3NEbEMzX7I1C',
+          'event_callback': callback
+      });
+      return false;
+    }
+    </script>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Modern URL shortening service with advanced analytics for marketers and businesses" />
+    <meta name="pushsdk" content="5660a8bd9be8c149895e6536cc4fe8d9">
+    <title>ShortURL - URL Shortening Service</title>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WBG84PBQ"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="root"></div>
+    <script type="module" src="/main.tsx"></script>
+  </body>
+</html>

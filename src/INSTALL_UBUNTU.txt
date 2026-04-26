@@ -1,0 +1,78 @@
+=====================================
+URL SHORTENER - УСТАНОВКА НА UBUNTU 22
+=====================================
+
+БЫСТРАЯ УСТАНОВКА:
+
+1. Скачайте проект на сервер
+   git clone <URL> url-shortener
+   cd url-shortener
+
+2. Запустите установку
+   chmod +x install.sh
+   ./install.sh
+
+3. Запустите сайт
+   npm run preview -- --host 0.0.0.0 --port 3000
+
+Готово! Сайт: http://ваш-ip:3000
+
+=====================================
+
+АВТОЗАПУСК (опционально):
+
+1. Создайте service файл:
+   sudo nano /etc/systemd/system/url-shortener.service
+
+2. Вставьте (замените пути):
+   [Unit]
+   Description=URL Shortener
+   After=network.target
+   
+   [Service]
+   Type=simple
+   User=ваш-username
+   WorkingDirectory=/полный/путь/к/проекту
+   ExecStart=/usr/bin/npm run preview -- --host 0.0.0.0 --port 3000
+   Restart=on-failure
+   
+   [Install]
+   WantedBy=multi-user.target
+
+3. Активируйте:
+   sudo systemctl daemon-reload
+   sudo systemctl enable url-shortener
+   sudo systemctl start url-shortener
+
+=====================================
+
+ПОЛНАЯ ДОКУМЕНТАЦИЯ:
+
+Файл                  Описание
+--------------------- --------------
+БЫСТРЫЙ_СТАРТ.md     Краткая инструкция (5 мин)
+UBUNTU_INSTALL.md    Полная инструкция
+КОНФИГУРАЦИЯ.md      Настройки проекта
+CHECKLIST.md         Чеклист развертывания
+
+=====================================
+
+КОМАНДЫ:
+
+Просмотр логов:
+  sudo journalctl -u url-shortener -f
+
+Проверка статуса:
+  sudo systemctl status url-shortener
+
+Перезапуск:
+  sudo systemctl restart url-shortener
+
+=====================================
+
+ПОМОЩЬ:
+
+Проблемы? Читайте UBUNTU_INSTALL.md
+Раздел "Решение проблем"
+
+=====================================

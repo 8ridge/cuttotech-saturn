@@ -1,0 +1,134 @@
+{
+  "hero": {
+    "title": "Shorten URLs, Expand Insights",
+    "subtitle": "Transform your links into powerful marketing tools with real-time analytics and geolocation tracking"
+  },
+  "form": {
+    "title": "Create Your Short URL",
+    "description": {
+      "authenticated": "Unlimited links with detailed analytics",
+      "guest": "Up to 5 free links for guests"
+    },
+    "inputPlaceholder": "Enter your long URL here...",
+    "inputLabel": "Enter your long URL to shorten",
+    "button": {
+      "loading": "Shortening...",
+      "default": "Shorten URL"
+    },
+    "success": {
+      "title": "Success! Your short URL is ready",
+      "scanQr": "Scan to open link",
+      "clickToOpen": "Click to open shortened link",
+      "copy": "Copy",
+      "copied": "Copied"
+    }
+  },
+  "benefits": {
+    "title": "Benefits for Your Business",
+    "subtitle": "Increase conversion and optimize your marketing campaigns",
+    "ctr": {
+      "title": "Increase CTR by 30%",
+      "description": "Short links look professional and build trust with users, leading to higher click-through rates"
+    },
+    "metrics": {
+      "title": "Essential Performance Metrics",
+      "description": "Get clear insights into clicks, transitions, and CTR without the noise."
+    },
+    "instant": {
+      "title": "Instant Creation",
+      "description": "Create short links in seconds without registration. Register for free to access advanced features"
+    }
+  },
+  "errors": {
+    "limitReached": "You have reached the limit of 5 links for guest users. Register to create unlimited links!",
+    "serverError": "Server returned invalid response",
+    "shortenError": "Error shortening URL",
+    "connectionError": "Server connection error",
+    "copyFailed": "Failed to copy link, please copy manually",
+    "copiedSuccess": "Copied to clipboard"
+  },
+  "success": {
+    "urlShortened": "URL shortened successfully!"
+  },
+  "dashboard": {
+    "subtitle": "Manage your links and track statistics",
+    "domainSettings": "Domain Settings",
+    "stats": {
+      "totalLinks": "Total Links",
+      "unlimited": "Unlimited",
+      "totalClicks": "Total Clicks",
+      "allTime": "All time",
+      "averageCTR": "Average CTR",
+      "clicksPerLink": "Clicks per link"
+    },
+    "links": {
+      "title": "My Links",
+      "createLink": "Create Link",
+      "createNew": "Create New Short Link",
+      "urlToShorten": "URL to Shorten",
+      "customCode": "Custom Link Code (optional)",
+      "customCodeHint": "Leave empty for automatic generation",
+      "creating": "Creating...",
+      "create": "Create",
+      "cancel": "Cancel",
+      "loading": "Loading...",
+      "empty": "You don't have any short links yet",
+      "createFirst": "Create First Link",
+      "table": {
+        "shortLink": "Short Link",
+        "originalUrl": "Original URL",
+        "clicks": "Clicks",
+        "created": "Created",
+        "actions": "Actions"
+      },
+      "qr": "QR",
+      "stats": "Stats"
+    }
+  },
+  "stats": {
+    "title": "Link Statistics",
+    "backToList": "Back to List",
+    "back": "Back",
+    "loading": "Loading statistics...",
+    "notFound": "Statistics not found",
+    "created": "Created",
+    "short": "Short",
+    "original": "Original",
+    "totalClicks": "Total Clicks",
+    "countries": "Countries",
+    "uniqueClicks": "Unique Clicks",
+    "devices": "Devices",
+    "topCountries": "Top 5 Countries",
+    "recentClicks": "Recent Clicks",
+    "detailedStatistics": "Detailed Statistics",
+    "table": {
+      "dateTime": "Date & Time",
+      "country": "Country",
+      "device": "Device",
+      "os": "OS"
+    },
+    "noData": "No data",
+    "noClicks": "No clicks",
+    "noClicksYet": "No clicks on this link yet",
+    "clicks": "clicks"
+  },
+  "profile": {
+    "title": "Profile Settings",
+    "edit": "Edit",
+    "hide": "Hide",
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "email": "Email",
+    "emailPlaceholder": "your@email.com",
+    "currentPassword": "Current Password (required to change password)",
+    "currentPasswordPlaceholder": "Enter current password",
+    "newPassword": "New Password (leave empty if not changing)",
+    "newPasswordPlaceholder": "New password",
+    "confirmPassword": "Confirm New Password",
+    "confirmPasswordPlaceholder": "Confirm new password",
+    "saving": "Saving...",
+    "saveChanges": "Save Changes",
+    "cancel": "Cancel"
+  }
+}
+

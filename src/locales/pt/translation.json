@@ -1,0 +1,134 @@
+{
+  "hero": {
+    "title": "Encurte URLs, Expanda Insights",
+    "subtitle": "Transforme seus links em ferramentas poderosas de marketing com análises em tempo real e rastreamento de geolocalização"
+  },
+  "form": {
+    "title": "Crie Seu URL Curto",
+    "description": {
+      "authenticated": "Links ilimitados com análises detalhadas",
+      "guest": "Até 5 links gratuitos para visitantes"
+    },
+    "inputPlaceholder": "Digite sua URL longa aqui...",
+    "inputLabel": "Digite sua URL longa para encurtar",
+    "button": {
+      "loading": "Encurtando...",
+      "default": "Encurtar URL"
+    },
+    "success": {
+      "title": "Sucesso! Seu URL curto está pronto",
+      "scanQr": "Escaneie para abrir o link",
+      "clickToOpen": "Clique para abrir o link encurtado",
+      "copy": "Copiar",
+      "copied": "Copiado"
+    }
+  },
+  "benefits": {
+    "title": "Benefícios para Seu Negócio",
+    "subtitle": "Aumente a conversão e otimize suas campanhas de marketing",
+    "ctr": {
+      "title": "Aumente o CTR em 30%",
+      "description": "Links curtos parecem profissionais e constroem confiança com os usuários, levando a taxas de cliques mais altas"
+    },
+    "metrics": {
+      "title": "Métricas Essenciais de Desempenho",
+      "description": "Obtenha insights claros sobre cliques, transições e CTR sem ruído."
+    },
+    "instant": {
+      "title": "Criação Instantânea",
+      "description": "Crie links curtos em segundos sem registro. Registre-se gratuitamente para acessar recursos avançados"
+    }
+  },
+  "errors": {
+    "limitReached": "Você atingiu o limite de 5 links para usuários visitantes. Registre-se para criar links ilimitados!",
+    "serverError": "O servidor retornou uma resposta inválida",
+    "shortenError": "Erro ao encurtar URL",
+    "connectionError": "Erro de conexão com o servidor",
+    "copyFailed": "Falha ao copiar o link, copie manualmente",
+    "copiedSuccess": "Copiado para a área de transferência"
+  },
+  "success": {
+    "urlShortened": "URL encurtado com sucesso!"
+  },
+  "dashboard": {
+    "subtitle": "Gerencie seus links e acompanhe estatísticas",
+    "domainSettings": "Configurações de Domínio",
+    "stats": {
+      "totalLinks": "Total de Links",
+      "unlimited": "Ilimitado",
+      "totalClicks": "Total de Cliques",
+      "allTime": "Todo o tempo",
+      "averageCTR": "CTR Médio",
+      "clicksPerLink": "Cliques por link"
+    },
+    "links": {
+      "title": "Meus Links",
+      "createLink": "Criar Link",
+      "createNew": "Criar Novo Link Curto",
+      "urlToShorten": "URL para Encurtar",
+      "customCode": "Código de Link Personalizado (opcional)",
+      "customCodeHint": "Deixe vazio para geração automática",
+      "creating": "Criando...",
+      "create": "Criar",
+      "cancel": "Cancelar",
+      "loading": "Carregando...",
+      "empty": "Você ainda não tem nenhum link curto",
+      "createFirst": "Criar Primeiro Link",
+      "table": {
+        "shortLink": "Link Curto",
+        "originalUrl": "URL Original",
+        "clicks": "Cliques",
+        "created": "Criado",
+        "actions": "Ações"
+      },
+      "qr": "QR",
+      "stats": "Estatísticas"
+    }
+  },
+  "stats": {
+    "title": "Estatísticas do Link",
+    "backToList": "Voltar à Lista",
+    "back": "Voltar",
+    "loading": "Carregando estatísticas...",
+    "notFound": "Estatísticas não encontradas",
+    "created": "Criado",
+    "short": "Curto",
+    "original": "Original",
+    "totalClicks": "Total de Cliques",
+    "countries": "Países",
+    "uniqueClicks": "Cliques Únicos",
+    "devices": "Dispositivos",
+    "topCountries": "Top 5 Países",
+    "recentClicks": "Cliques Recentes",
+    "detailedStatistics": "Estatísticas Detalhadas",
+    "table": {
+      "dateTime": "Data e Hora",
+      "country": "País",
+      "device": "Dispositivo",
+      "os": "SO"
+    },
+    "noData": "Sem dados",
+    "noClicks": "Sem cliques",
+    "noClicksYet": "Ainda não há cliques neste link",
+    "clicks": "cliques"
+  },
+  "profile": {
+    "title": "Configurações do Perfil",
+    "edit": "Editar",
+    "hide": "Ocultar",
+    "name": "Nome",
+    "namePlaceholder": "Seu nome",
+    "email": "E-mail",
+    "emailPlaceholder": "seu@email.com",
+    "currentPassword": "Senha Atual (obrigatória para alterar senha)",
+    "currentPasswordPlaceholder": "Digite a senha atual",
+    "newPassword": "Nova Senha (deixe vazio se não estiver alterando)",
+    "newPasswordPlaceholder": "Nova senha",
+    "confirmPassword": "Confirmar Nova Senha",
+    "confirmPasswordPlaceholder": "Confirme a nova senha",
+    "saving": "Salvando...",
+    "saveChanges": "Salvar Alterações",
+    "cancel": "Cancelar"
+  }
+}
+

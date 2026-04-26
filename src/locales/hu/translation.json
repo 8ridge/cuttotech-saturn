@@ -1,0 +1,134 @@
+{
+  "hero": {
+    "title": "Rövidítse az URL-eket, Bővítse az Elemzéseket",
+    "subtitle": "Alakítsa át linkjeit hatékony marketing eszközökké valós idejű elemzésekkel és geolokációs követéssel"
+  },
+  "form": {
+    "title": "Hozza Létre Rövid URL-jét",
+    "description": {
+      "authenticated": "Korlátlan linkek részletes elemzésekkel",
+      "guest": "Legfeljebb 5 ingyenes link vendégeknek"
+    },
+    "inputPlaceholder": "Adja meg a hosszú URL-t itt...",
+    "inputLabel": "Adja meg a hosszú URL-t a rövidítéshez",
+    "button": {
+      "loading": "Rövidítés...",
+      "default": "URL Rövidítése"
+    },
+    "success": {
+      "title": "Siker! A rövid URL kész",
+      "scanQr": "Olvassa be a QR kódot a link megnyitásához",
+      "clickToOpen": "Kattintson a rövidített link megnyitásához",
+      "copy": "Másolás",
+      "copied": "Másolva"
+    }
+  },
+  "benefits": {
+    "title": "Előnyök Az Ön Üzletéhez",
+    "subtitle": "Növelje a konverziót és optimalizálja marketing kampányait",
+    "ctr": {
+      "title": "Növelje a CTR-t 30%-kal",
+      "description": "A rövid linkek professzionálisnak tűnnek és bizalmat építenek a felhasználókkal, magasabb kattintási arányokhoz vezetve"
+    },
+    "metrics": {
+      "title": "Alapvető Teljesítménymutatók",
+      "description": "Szerezzen egyértelmű betekintést a kattintásokba, átmenetekbe és CTR-be a zaj nélkül."
+    },
+    "instant": {
+      "title": "Azonnali Létrehozás",
+      "description": "Hozzon létre rövid linkeket másodpercek alatt regisztráció nélkül. Regisztráljon ingyenesen a fejlett funkciók eléréséhez"
+    }
+  },
+  "errors": {
+    "limitReached": "Elérte az 5 linkes korlátot vendég felhasználóknak. Regisztráljon korlátlan linkek létrehozásához!",
+    "serverError": "A szerver érvénytelen választ adott",
+    "shortenError": "Hiba az URL rövidítésekor",
+    "connectionError": "Szerver kapcsolati hiba",
+    "copyFailed": "A link másolása sikertelen, kérjük másolja manuálisan",
+    "copiedSuccess": "Vágólapra másolva"
+  },
+  "success": {
+    "urlShortened": "Az URL sikeresen rövidítve!"
+  },
+  "dashboard": {
+    "subtitle": "Kezelje linkjeit és kövesse nyomon a statisztikákat",
+    "domainSettings": "Domain Beállítások",
+    "stats": {
+      "totalLinks": "Összes Link",
+      "unlimited": "Korlátlan",
+      "totalClicks": "Összes Kattintás",
+      "allTime": "Minden idő",
+      "averageCTR": "Átlagos CTR",
+      "clicksPerLink": "Kattintás linkenként"
+    },
+    "links": {
+      "title": "Linkjeim",
+      "createLink": "Link Létrehozása",
+      "createNew": "Új Rövid Link Létrehozása",
+      "urlToShorten": "Rövidítendő URL",
+      "customCode": "Egyedi Link Kód (opcionális)",
+      "customCodeHint": "Hagyja üresen az automatikus generáláshoz",
+      "creating": "Létrehozás...",
+      "create": "Létrehozás",
+      "cancel": "Mégse",
+      "loading": "Betöltés...",
+      "empty": "Még nincs rövid linkje",
+      "createFirst": "Első Link Létrehozása",
+      "table": {
+        "shortLink": "Rövid Link",
+        "originalUrl": "Eredeti URL",
+        "clicks": "Kattintások",
+        "created": "Létrehozva",
+        "actions": "Műveletek"
+      },
+      "qr": "QR",
+      "stats": "Statisztikák"
+    }
+  },
+  "stats": {
+    "title": "Link Statisztikák",
+    "backToList": "Vissza a Listához",
+    "back": "Vissza",
+    "loading": "Statisztikák betöltése...",
+    "notFound": "Statisztikák nem találhatók",
+    "created": "Létrehozva",
+    "short": "Rövid",
+    "original": "Eredeti",
+    "totalClicks": "Összes Kattintás",
+    "countries": "Országok",
+    "uniqueClicks": "Egyedi Kattintások",
+    "devices": "Eszközök",
+    "topCountries": "Top 5 Ország",
+    "recentClicks": "Legutóbbi Kattintások",
+    "detailedStatistics": "Részletes Statisztikák",
+    "table": {
+      "dateTime": "Dátum és Idő",
+      "country": "Ország",
+      "device": "Eszköz",
+      "os": "OS"
+    },
+    "noData": "Nincs adat",
+    "noClicks": "Nincs kattintás",
+    "noClicksYet": "Még nincs kattintás ezen a linken",
+    "clicks": "kattintás"
+  },
+  "profile": {
+    "title": "Profil Beállítások",
+    "edit": "Szerkesztés",
+    "hide": "Elrejtés",
+    "name": "Név",
+    "namePlaceholder": "Az Ön neve",
+    "email": "E-mail",
+    "emailPlaceholder": "your@email.com",
+    "currentPassword": "Jelenlegi Jelszó (szükséges a jelszó megváltoztatásához)",
+    "currentPasswordPlaceholder": "Adja meg a jelenlegi jelszót",
+    "newPassword": "Új Jelszó (hagyja üresen, ha nem változtat)",
+    "newPasswordPlaceholder": "Új jelszó",
+    "confirmPassword": "Új Jelszó Megerősítése",
+    "confirmPasswordPlaceholder": "Erősítse meg az új jelszót",
+    "saving": "Mentés...",
+    "saveChanges": "Változások Mentése",
+    "cancel": "Mégse"
+  }
+}
+
