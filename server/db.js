@@ -5,8 +5,15 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
+// SSL is required by managed Postgres providers (Saturn, Railway, Heroku, Neon, etc.)
+// Auto-enable when DATABASE_URL points to a remote host (not localhost).
+const databaseUrl = process.env.DATABASE_URL || 'postgresql://urlshortener:urlshortener_secure_password_2024@localhost:5432/urlshortener';
+const isLocalDb = /(@|\/)(localhost|127\.0\.0\.1|::1)(:|\/)/.test(databaseUrl);
+const useSsl = process.env.PGSSL === 'true' || (!isLocalDb && process.env.PGSSL !== 'false');
+
 const pool = new Pool({
-  connectionString: process.env.DATABASE_URL || 'postgresql://urlshortener:urlshortener_secure_password_2024@localhost:5432/urlshortener',
+  connectionString: databaseUrl,
+  ssl: useSsl ? { rejectUnauthorized: false } : false,
 });
 
 // Test connection

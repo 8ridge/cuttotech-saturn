@@ -2610,21 +2610,33 @@ if (distExists) {
   });
 }
 
-// Start server
-// Listen on localhost only - server should be accessed only through Nginx reverse proxy (domain)
-app.listen(PORT, '127.0.0.1', () => {
-  const databaseUrl = process.env.DATABASE_URL?.split('@')[1] || 'localhost:5432/urlshortener';
-  
-  // Structured logging for server start
-  logger.info({
-    event: 'server_start',
-    port: PORT,
-    host: '127.0.0.1',
-    baseUrl: BASE_URL,
-    database: databaseUrl,
-    auth: 'Local JWT',
-    nodeEnv: process.env.NODE_ENV || 'development',
-  });
+// Start server (after running migrations)
+// Bind to 0.0.0.0 so PaaS/Docker load balancers can route traffic.
+const HOST = process.env.HOST || '0.0.0.0';
+
+async function bootstrap() {
+  // Run database migrations on startup (idempotent — safe to re-run)
+  if (process.env.SKIP_MIGRATIONS !== 'true') {
+    try {
+      const { runMigrations } = await import('./migrate.js');
+      await runMigrations();
+    } catch (err) {
+      console.error('❌ Migration failed:', err.message);
+      // Don't exit — let server boot anyway so /health endpoint works for debugging
+    }
+  }
+
+  app.listen(PORT, HOST, () => {
+    const databaseUrl = process.env.DATABASE_URL?.split('@')[1] || 'localhost:5432/urlshortener';
+    logger.info({
+      event: 'server_start',
+      port: PORT,
+      host: HOST,
+      baseUrl: BASE_URL,
+      database: databaseUrl,
+      auth: 'Local JWT',
+      nodeEnv: process.env.NODE_ENV || 'development',
+    });
   
   // Debug: List all registered routes (only in development)
   if (process.env.NODE_ENV !== 'production') {
@@ -2667,5 +2679,11 @@ app.listen(PORT, '127.0.0.1', () => {
       });
     }
   }
+  });
+}
+
+bootstrap().catch((err) => {
+  console.error('❌ Server bootstrap failed:', err);
+  process.exit(1);
 });
 
